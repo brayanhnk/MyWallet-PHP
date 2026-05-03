@@ -1,4 +1,5 @@
 <?php
+require_once 'includes/header.php';
 
 check_auth();
 
@@ -72,3 +73,4 @@ $balance_class = $balance >= 0 ? 'positive-balance' : 'negative-balance';
     </div>
 </div>
 
+<?php require_once 'includes/footer.php'; ?>

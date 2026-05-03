@@ -1,4 +1,5 @@
 <?php
+require_once 'includes/functions.php';
 
 if(!isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true){
     header("Location: index.php");
@@ -19,3 +20,5 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $error = 'Usuário ou senha inválidos.';
     }
 }
+
+<?php require_once 'includes/footer.php'; ?>

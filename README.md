@@ -43,10 +43,9 @@ Mywallet/
 ├── index.php            # Dashboard (Resumo do Saldo e Cadastro de Transações)
 ├── historico.php        # Tabela com listagem de movimentações e percentuais
 ├── login.php            # Tela de autenticação e boas-vindas
-├── limpar.php           # Rota para limpar os dados da sessão (Zerar Mês)
+├── clean.php           # Rota para limpar os dados da sessão (Zerar Mês)
 ├── logout.php           # Rota para deslogar do sistema
 ├── style.css            # Folha de estilos principal do projeto
-├── gemini.md            # Documento base de requisitos
 └── README.md            # Documentação do projeto (este arquivo)
 ```
 

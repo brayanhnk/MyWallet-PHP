@@ -2,7 +2,7 @@
 session_start();
 
 define('USER_NAME', 'admin');
-define('USER_PASS_HASH', '$2y$10$wT/7z.j18/UoWp.T89/zfeP/c/w/S8H1B4GZ.A/Tf7G6E/8H/v3fK');
+define('USER_PASS_HASH', '$2y$10$3.1IgNmwltYaTFWCSzvAhumo9WhKb4ojkgPied8CIGiA.cPfDlwbm');
 
 function check_auth(){
     if(!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true){
@@ -17,7 +17,7 @@ function format_currency($value){
 }
 
 
-funcction get_transactions(){
+function get_transactions(){
     return isset($_SESSION['transactions']) ? $_SESSION['transactions'] : [];
 }
 
@@ -30,7 +30,7 @@ function add_transaction($name, $value, $type){
         'id' => uniqid(),
         'name' => $name,
         'value' => (float)$value,
-        'type' => $type
+        'type' => $type,
         'date' => date('Y-m-d H:i:s')
     ];
 }

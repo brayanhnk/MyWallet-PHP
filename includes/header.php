@@ -21,7 +21,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <div class="nav-links">
                 <a href="index.php" class="<?= $current_page === 'index.php' ? 'active' : '' ?>">Dashboard</a>
                 <a href="historico.php" class="<?= $current_page === 'historico.php' ? 'active' : '' ?>">Histórico</a>
-                <a href="limpar.php" class="btn-clear" onclick="return confirm('Tem certeza que deseja zerar o mês? Isso apagará todas as transações.');">Zerar Mês</a>
+                <a href="clean.php" class="btn-clear" onclick="return confirm('Tem certeza que deseja zerar o mês? Isso apagará todas as transações.');">Zerar Mês</a>
                 <a href="logout.php" class="btn-logout">Sair</a>
             </div>
         </div>
